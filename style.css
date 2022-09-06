@@ -1,0 +1,82 @@
+:root {
+  --clr-primary-100: hsl(193, 38%, 86%);
+  --clr-primary-200: hsl(150, 100%, 66%);
+
+  --clr-secondary-100: hsl(217, 19%, 38%);
+  --clr-secondary-200: hsl(217, 19%, 24%);
+  --clr-secondary-300: hsl(218, 23%, 16%);
+
+  --fs-primary: 28px;
+  --ff-primary: "Manrope", sans-serif;
+  --fw-bold: 800;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-primary);
+
+  background-color: var(--clr-secondary-300);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.advice-container {
+  background-color: var(--clr-secondary-200);
+  box-shadow: #0000001f 20px 20px 20px 0px;
+  text-align: center;
+  padding: 2rem;
+  max-width: 600px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.advice-container p {
+  padding-bottom: 1.5rem;
+}
+
+.advice-container .text .heading {
+  color: var(--clr-primary-200);
+  text-transform: uppercase;
+  letter-spacing: 1.7px;
+  font-weight: var(--fw-bold);
+  font-size: 0.8rem;
+}
+
+.advice-container .text .text-content {
+  color: var(--clr-primary-100);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-primary);
+  width: 400px;
+  margin-inline: auto;
+}
+
+.advice-container .text img {
+  margin-bottom: 1rem;
+}
+
+button {
+  cursor: pointer;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 14px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--clr-primary-200);
+  transition: 0.5s;
+}
+
+button:hover {
+  box-shadow: 0 0 0px #79b697, 0 0 10px #52ffa8, 0 0 25px #52ffa8;
+}
+button img {
+  width: 20px;
+}
