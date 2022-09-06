@@ -72,6 +72,7 @@ button {
   border-radius: 50%;
   background-color: var(--clr-primary-200);
   transition: 0.5s;
+  display: flex;
 }
 
 button:hover {
